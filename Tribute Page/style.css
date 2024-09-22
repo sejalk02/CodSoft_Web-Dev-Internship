@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Georgia;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.header {
+    padding: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header .title {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.tribute {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 78rem;
+    margin: 0 auto;
+    background: rgb(255, 242, 251);
+    color: black;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tribute blockquote {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: #555;
+    padding: 1rem;
+    border-left: 5px solid #e82727;
+    margin: 1rem 0;
+}
+
+.tribute img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.tribute img:hover {
+    transform: scale(1.05);
+}
+
+.bio {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 40rem;
+    background: rgba(111, 106, 106, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bio h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.bio p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.bio hr {
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+}
+
+.head {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .tribute {
+        grid-template-columns: 1fr;
+    }
+
+    .bio {
+        width: auto;
+        padding: 1rem;
+    }
+
+    .header .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .tribute blockquote {
+        font-size: 2rem;
+    }
+}
